@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6NI-va-9w4">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Ana Sayfa-->
+        <scene sceneID="Y0f-qy-df6">
+            <objects>
+                <viewController id="RA5-t6-2tg" customClass="HomeVC" customModule="TRFinansIslemlerScreen" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TP1-Xn-YFm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="FV0-uw-UD2"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Ana Sayfa" image="iconHome" selectedImage="iconHome" id="WIH-cD-30R">
+                        <color key="badgeColor" name="TabbarItemBackgroundColor"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qNa-2O-rEz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-133.33333333333334" y="-1082.1428571428571"/>
+        </scene>
+        <!--Kampanya-->
+        <scene sceneID="IoP-2b-WMR">
+            <objects>
+                <viewController id="eO3-AX-bbw" customClass="CampaignsVC" customModule="TRFinansIslemlerScreen" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2cl-Eg-aNn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="ZeW-tt-85u"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Kampanya" image="iconKampanya" selectedImage="iconKampanya" id="Tmg-DD-9uY"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4PU-cv-KkJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2760.8695652173915" y="-1082.1428571428571"/>
+        </scene>
+        <!--Başvurular-->
+        <scene sceneID="Qoj-MY-bDu">
+            <objects>
+                <viewController id="wPD-07-fjE" customClass="ApplicationsVC" customModule="TRFinansIslemlerScreen" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0x9-ti-ESU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="3go-Lc-WAr"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Başvurular" image="iconPlusArti" selectedImage="iconPlusArti" id="bJf-MZ-Sea"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C78-eA-10D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2039.1304347826087" y="-1082.1428571428571"/>
+        </scene>
+        <!--İşlemler-->
+        <scene sceneID="JXf-zH-Azx">
+            <objects>
+                <viewController id="Got-Ng-yWB" customClass="TransactionVC" customModule="TRFinansIslemlerScreen" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tEW-5t-1F6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="yUG-iu-z5g"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="İşlemler" image="iconIslemler" selectedImage="iconIslemler" id="mfs-28-axm"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VEL-eS-dc3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1305.7971014492755" y="-1082.1428571428571"/>
+        </scene>
+        <!--Hesap/Kart-->
+        <scene sceneID="oa5-4f-z6G">
+            <objects>
+                <viewController id="Me1-KX-cpA" customClass="AccountCardVC" customModule="TRFinansIslemlerScreen" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nqd-Fp-Gt4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="wru-cg-eco"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Hesap/Kart" image="iconWallet" landscapeImage="iconWallet" selectedImage="iconWallet" id="xav-Y7-zYm">
+                        <color key="badgeColor" name="TabbarItemBackgroundColor"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3it-6H-enN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="576.81159420289862" y="-1082.1428571428571"/>
+        </scene>
+        <!--Tab BarVC-->
+        <scene sceneID="aVh-pS-r0v">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="6NI-va-9w4" customClass="TabBarVC" customModule="TRFinansIslemlerScreen" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" translucent="NO" id="TiL-bS-caT" customClass="CustomUITabbar" customModule="TRFinansIslemlerScreen" customModuleProvider="target">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" name="TabbarItemBackgroundColor"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="RA5-t6-2tg" kind="relationship" relationship="viewControllers" id="qvq-oW-Uwb"/>
+                        <segue destination="Me1-KX-cpA" kind="relationship" relationship="viewControllers" id="I5w-06-QrV"/>
+                        <segue destination="Got-Ng-yWB" kind="relationship" relationship="viewControllers" id="cGI-9D-CVu"/>
+                        <segue destination="wPD-07-fjE" kind="relationship" relationship="viewControllers" id="NOL-RJ-qc1"/>
+                        <segue destination="eO3-AX-bbw" kind="relationship" relationship="viewControllers" id="65E-Di-7fn"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b3K-Qh-sQs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1306" y="-2125"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="iconHome" width="24" height="24"/>
+        <image name="iconIslemler" width="24" height="24"/>
+        <image name="iconKampanya" width="24" height="24"/>
+        <image name="iconPlusArti" width="24" height="24"/>
+        <image name="iconWallet" width="24" height="24"/>
+        <namedColor name="TabbarItemBackgroundColor">
+            <color red="0.60784313725490191" green="0.74117647058823533" blue="0.17254901960784313" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

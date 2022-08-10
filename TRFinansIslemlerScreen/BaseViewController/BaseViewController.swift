@@ -12,7 +12,8 @@ class BaseViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        let logo = UIImage(named: VCConstants.turkiyeFinansLogo)
+        let imageView = UIImageView(image:logo)
+        self.navigationItem.titleView = imageView
     }
 }

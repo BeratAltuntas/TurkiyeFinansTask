@@ -17,7 +17,6 @@ final class AccountCardVC: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
 }
 

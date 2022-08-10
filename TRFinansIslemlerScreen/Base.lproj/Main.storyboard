@@ -9,25 +9,145 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Ana Sayfa-->
+        <!--HomeVC-->
         <scene sceneID="Y0f-qy-df6">
             <objects>
                 <viewController id="RA5-t6-2tg" customClass="HomeVC" customModule="TRFinansIslemlerScreen" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TP1-Xn-YFm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundImage" translatesAutoresizingMaskIntoConstraints="NO" id="Oh5-cq-0eb">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="399"/>
+                                <color key="backgroundColor" name="HomeScreenBackgroundcolor"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5nG-KC-Ovd">
+                                <rect key="frame" x="24" y="88" width="366" height="62"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62" id="Sje-Cz-fDE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="9oI-0P-RQg" customClass="CustomUITableView" customModule="TRFinansIslemlerScreen" customModuleProvider="target">
+                                <rect key="frame" x="16" y="150" width="382" height="340"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="340" id="Md1-05-vtN"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="dataSource" destination="RA5-t6-2tg" id="Q2m-l4-nnp"/>
+                                    <outlet property="delegate" destination="RA5-t6-2tg" id="P24-vl-Ein"/>
+                                </connections>
+                            </tableView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundImage" translatesAutoresizingMaskIntoConstraints="NO" id="9Nw-NH-veq" customClass="CustomUIImageView" customModule="TRFinansIslemlerScreen" customModuleProvider="target">
+                                <rect key="frame" x="16" y="675" width="382" height="114"/>
+                                <color key="backgroundColor" name="homeScreenImageBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="114" id="MkB-RC-dJk"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bas Biriktir!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GBA-z3-axX">
+                                <rect key="frame" x="188" y="701" width="210" height="29"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Wkg-3J-RnH">
+                                <rect key="frame" x="16" y="675" width="136" height="114"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="136" id="spH-kZ-yPD"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="40"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x5v-sb-vsa">
+                                <rect key="frame" x="188" y="736" width="150" height="18"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="İstediğinde ">
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="NSColor" red="0.16078000000000001" green="0.72941" blue="0.63922000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="15" name="HelveticaNeue-CondensedBold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="5 TL ">
+                                        <attributes>
+                                            <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="NSColor" red="0.16078431372549018" green="0.72941176470588232" blue="0.63921568627450975" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="15" name="HelveticaNeue-CondensedBold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" biriktir.">
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="FV0-uw-UD2"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="HomeScreenBackgroundcolor"/>
+                        <constraints>
+                            <constraint firstItem="Oh5-cq-0eb" firstAttribute="top" secondItem="TP1-Xn-YFm" secondAttribute="top" id="1ui-gD-B4P"/>
+                            <constraint firstItem="GBA-z3-axX" firstAttribute="leading" secondItem="Wkg-3J-RnH" secondAttribute="trailing" constant="36" id="2iH-3U-zdL"/>
+                            <constraint firstItem="FV0-uw-UD2" firstAttribute="bottom" secondItem="9Nw-NH-veq" secondAttribute="bottom" constant="24" id="62x-h5-Fim"/>
+                            <constraint firstItem="5nG-KC-Ovd" firstAttribute="top" secondItem="FV0-uw-UD2" secondAttribute="top" id="Bom-bX-K1I"/>
+                            <constraint firstItem="Wkg-3J-RnH" firstAttribute="bottom" secondItem="9Nw-NH-veq" secondAttribute="bottom" id="Dam-W7-49P"/>
+                            <constraint firstItem="9Nw-NH-veq" firstAttribute="leading" secondItem="FV0-uw-UD2" secondAttribute="leading" constant="16" id="DlH-pW-xoJ"/>
+                            <constraint firstItem="9oI-0P-RQg" firstAttribute="leading" secondItem="FV0-uw-UD2" secondAttribute="leading" constant="16" id="EgM-KG-yRm"/>
+                            <constraint firstItem="Wkg-3J-RnH" firstAttribute="leading" secondItem="9Nw-NH-veq" secondAttribute="leading" id="IW3-JM-5J0"/>
+                            <constraint firstItem="FV0-uw-UD2" firstAttribute="trailing" secondItem="9Nw-NH-veq" secondAttribute="trailing" constant="16" id="Iz6-Bl-eDf"/>
+                            <constraint firstItem="Oh5-cq-0eb" firstAttribute="trailing" secondItem="FV0-uw-UD2" secondAttribute="trailing" id="J2h-XX-KPu"/>
+                            <constraint firstItem="FV0-uw-UD2" firstAttribute="trailing" secondItem="5nG-KC-Ovd" secondAttribute="trailing" constant="24" id="JHq-dP-uUF"/>
+                            <constraint firstItem="GBA-z3-axX" firstAttribute="trailing" secondItem="9Nw-NH-veq" secondAttribute="trailing" id="NJs-NR-pNr"/>
+                            <constraint firstItem="9Nw-NH-veq" firstAttribute="top" relation="greaterThanOrEqual" secondItem="9oI-0P-RQg" secondAttribute="bottom" constant="61" id="Q6v-5m-X6O"/>
+                            <constraint firstItem="Oh5-cq-0eb" firstAttribute="leading" secondItem="FV0-uw-UD2" secondAttribute="leading" id="Swp-TN-ZS9"/>
+                            <constraint firstItem="x5v-sb-vsa" firstAttribute="top" secondItem="GBA-z3-axX" secondAttribute="bottom" constant="6" id="U7f-vY-eEt"/>
+                            <constraint firstItem="5nG-KC-Ovd" firstAttribute="leading" secondItem="FV0-uw-UD2" secondAttribute="leading" constant="24" id="Wrw-OP-HHy"/>
+                            <constraint firstItem="x5v-sb-vsa" firstAttribute="leading" secondItem="GBA-z3-axX" secondAttribute="leading" id="a7s-cb-5JJ"/>
+                            <constraint firstItem="GBA-z3-axX" firstAttribute="top" secondItem="9Nw-NH-veq" secondAttribute="top" constant="26" id="l4w-qv-CJ0"/>
+                            <constraint firstItem="9Nw-NH-veq" firstAttribute="baseline" relation="greaterThanOrEqual" secondItem="x5v-sb-vsa" secondAttribute="firstBaseline" constant="10.5" symbolType="layoutAnchor" id="lr1-kk-Wo9"/>
+                            <constraint firstItem="FV0-uw-UD2" firstAttribute="trailing" secondItem="9oI-0P-RQg" secondAttribute="trailing" constant="16" id="nRk-eb-Yjx"/>
+                            <constraint firstItem="9oI-0P-RQg" firstAttribute="top" secondItem="5nG-KC-Ovd" secondAttribute="bottom" id="wRH-X5-NSP"/>
+                            <constraint firstItem="Wkg-3J-RnH" firstAttribute="top" secondItem="9Nw-NH-veq" secondAttribute="top" id="wgL-pa-KTC"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Ana Sayfa" image="iconHome" selectedImage="iconHome" id="WIH-cD-30R">
-                        <color key="badgeColor" name="TabbarItemBackgroundColor"/>
-                    </tabBarItem>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="always" id="M7S-PX-idx"/>
+                    <connections>
+                        <outlet property="labelTitle" destination="5nG-KC-Ovd" id="S7W-8w-v5z"/>
+                        <outlet property="transactionsTableView" destination="9oI-0P-RQg" id="iZZ-L6-0sa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qNa-2O-rEz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-133.33333333333334" y="-1082.1428571428571"/>
+            <point key="canvasLocation" x="237.68115942028987" y="-496.20535714285711"/>
         </scene>
-        <!--Kampanya-->
+        <!--CampaignsVC-->
         <scene sceneID="IoP-2b-WMR">
             <objects>
                 <viewController id="eO3-AX-bbw" customClass="CampaignsVC" customModule="TRFinansIslemlerScreen" customModuleProvider="target" sceneMemberID="viewController">
@@ -37,13 +157,13 @@
                         <viewLayoutGuide key="safeArea" id="ZeW-tt-85u"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Kampanya" image="iconKampanya" selectedImage="iconKampanya" id="Tmg-DD-9uY"/>
+                    <navigationItem key="navigationItem" id="86R-gv-LML"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4PU-cv-KkJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2760.8695652173915" y="-1082.1428571428571"/>
+            <point key="canvasLocation" x="4729" y="-496"/>
         </scene>
-        <!--Başvurular-->
+        <!--ApplicationsVC-->
         <scene sceneID="Qoj-MY-bDu">
             <objects>
                 <viewController id="wPD-07-fjE" customClass="ApplicationsVC" customModule="TRFinansIslemlerScreen" customModuleProvider="target" sceneMemberID="viewController">
@@ -53,13 +173,13 @@
                         <viewLayoutGuide key="safeArea" id="3go-Lc-WAr"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Başvurular" image="iconPlusArti" selectedImage="iconPlusArti" id="bJf-MZ-Sea"/>
+                    <navigationItem key="navigationItem" id="ynC-fv-Q0d"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C78-eA-10D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2039.1304347826087" y="-1082.1428571428571"/>
+            <point key="canvasLocation" x="3596" y="-496"/>
         </scene>
-        <!--İşlemler-->
+        <!--TransactionVC-->
         <scene sceneID="JXf-zH-Azx">
             <objects>
                 <viewController id="Got-Ng-yWB" customClass="TransactionVC" customModule="TRFinansIslemlerScreen" customModuleProvider="target" sceneMemberID="viewController">
@@ -69,13 +189,13 @@
                         <viewLayoutGuide key="safeArea" id="yUG-iu-z5g"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="İşlemler" image="iconIslemler" selectedImage="iconIslemler" id="mfs-28-axm"/>
+                    <navigationItem key="navigationItem" id="u4E-RN-M5S"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VEL-eS-dc3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1305.7971014492755" y="-1082.1428571428571"/>
+            <point key="canvasLocation" x="2429" y="-496"/>
         </scene>
-        <!--Hesap/Kart-->
+        <!--Account CardVC-->
         <scene sceneID="oa5-4f-z6G">
             <objects>
                 <viewController id="Me1-KX-cpA" customClass="AccountCardVC" customModule="TRFinansIslemlerScreen" customModuleProvider="target" sceneMemberID="viewController">
@@ -85,20 +205,19 @@
                         <viewLayoutGuide key="safeArea" id="wru-cg-eco"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Hesap/Kart" image="iconWallet" landscapeImage="iconWallet" selectedImage="iconWallet" id="xav-Y7-zYm">
-                        <color key="badgeColor" name="TabbarItemBackgroundColor"/>
-                    </tabBarItem>
+                    <navigationItem key="navigationItem" id="PjC-0P-Oui"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3it-6H-enN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="576.81159420289862" y="-1082.1428571428571"/>
+            <point key="canvasLocation" x="1370" y="-496"/>
         </scene>
         <!--Tab BarVC-->
         <scene sceneID="aVh-pS-r0v">
             <objects>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="6NI-va-9w4" customClass="TabBarVC" customModule="TRFinansIslemlerScreen" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" translucent="NO" id="TiL-bS-caT" customClass="CustomUITabbar" customModule="TRFinansIslemlerScreen" customModuleProvider="target">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" translucent="NO" id="TiL-bS-caT">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -106,26 +225,132 @@
                         <color key="selectedImageTintColor" name="TabbarItemBackgroundColor"/>
                     </tabBar>
                     <connections>
-                        <segue destination="RA5-t6-2tg" kind="relationship" relationship="viewControllers" id="qvq-oW-Uwb"/>
-                        <segue destination="Me1-KX-cpA" kind="relationship" relationship="viewControllers" id="I5w-06-QrV"/>
-                        <segue destination="Got-Ng-yWB" kind="relationship" relationship="viewControllers" id="cGI-9D-CVu"/>
-                        <segue destination="wPD-07-fjE" kind="relationship" relationship="viewControllers" id="NOL-RJ-qc1"/>
-                        <segue destination="eO3-AX-bbw" kind="relationship" relationship="viewControllers" id="65E-Di-7fn"/>
+                        <segue destination="ZVA-4s-Bgc" kind="relationship" relationship="viewControllers" id="qvq-oW-Uwb"/>
+                        <segue destination="xGh-UL-Uly" kind="relationship" relationship="viewControllers" id="I5w-06-QrV"/>
+                        <segue destination="9Gd-5q-O0D" kind="relationship" relationship="viewControllers" id="cGI-9D-CVu"/>
+                        <segue destination="c01-U3-Fj3" kind="relationship" relationship="viewControllers" id="NOL-RJ-qc1"/>
+                        <segue destination="e2X-UP-3dp" kind="relationship" relationship="viewControllers" id="65E-Di-7fn"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b3K-Qh-sQs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1306" y="-2125"/>
+            <point key="canvasLocation" x="2429" y="-2140"/>
+        </scene>
+        <!--Ana Sayfa-->
+        <scene sceneID="Mcc-iN-2Md">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ZVA-4s-Bgc" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Ana Sayfa" image="iconHome" selectedImage="iconHome" id="WIH-cD-30R">
+                        <color key="badgeColor" name="TabbarItemBackgroundColor"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="AeC-mu-EtR">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="RA5-t6-2tg" kind="relationship" relationship="rootViewController" id="Ac0-dv-ya5"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Te-wg-L6U" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="239" y="-1244"/>
+        </scene>
+        <!--Hesap/Kart-->
+        <scene sceneID="u3R-MO-e1I">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xGh-UL-Uly" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Hesap/Kart" image="iconWallet" landscapeImage="iconWallet" selectedImage="iconWallet" id="xav-Y7-zYm">
+                        <color key="badgeColor" name="TabbarItemBackgroundColor"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="wV2-U1-2O9">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Me1-KX-cpA" kind="relationship" relationship="rootViewController" id="AOX-tB-ul1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QPW-Av-Rxz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1369.5652173913045" y="-1244.1964285714284"/>
+        </scene>
+        <!--İşlemler-->
+        <scene sceneID="t3j-3O-K3Q">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9Gd-5q-O0D" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="İşlemler" image="iconIslemler" selectedImage="iconIslemler" id="mfs-28-axm"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="r2H-8e-XF3">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Got-Ng-yWB" kind="relationship" relationship="rootViewController" id="yAs-Aa-80b"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SfL-jM-swA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2429" y="-1244"/>
+        </scene>
+        <!--Başvurular-->
+        <scene sceneID="JWZ-QH-QCO">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="c01-U3-Fj3" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Başvurular" image="iconPlusArti" selectedImage="iconPlusArti" id="bJf-MZ-Sea"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="daf-0g-S48">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="wPD-07-fjE" kind="relationship" relationship="rootViewController" id="d91-4o-TfC"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="91m-Jt-LlN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3595.652173913044" y="-1213.3928571428571"/>
+        </scene>
+        <!--Kampanya-->
+        <scene sceneID="Tyl-8b-NMr">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="e2X-UP-3dp" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Kampanya" image="iconKampanya" selectedImage="iconKampanya" id="Tmg-DD-9uY"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="8BD-Dp-qn4">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="eO3-AX-bbw" kind="relationship" relationship="rootViewController" id="X14-w0-b3k"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xQz-qK-QsZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4729" y="-1213"/>
         </scene>
     </scenes>
     <resources>
+        <image name="backgroundImage" width="374" height="399"/>
         <image name="iconHome" width="24" height="24"/>
         <image name="iconIslemler" width="24" height="24"/>
         <image name="iconKampanya" width="24" height="24"/>
         <image name="iconPlusArti" width="24" height="24"/>
         <image name="iconWallet" width="24" height="24"/>
+        <namedColor name="HomeScreenBackgroundcolor">
+            <color red="0.96862745098039216" green="0.96862745098039216" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="TabbarItemBackgroundColor">
-            <color red="0.60784313725490191" green="0.74117647058823533" blue="0.17254901960784313" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.60799998044967651" green="0.74099999666213989" blue="0.17299999296665192" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="homeScreenImageBackgroundColor">
+            <color red="0.80784313725490198" green="0.90588235294117647" blue="0.30196078431372547" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

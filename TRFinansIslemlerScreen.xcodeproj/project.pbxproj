@@ -27,6 +27,13 @@
 		F45BB38A28A29CA900EC47B1 /* TransactionsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45BB38928A29CA900EC47B1 /* TransactionsVM.swift */; };
 		F45BB38C28A29CC300EC47B1 /* AccountCardVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45BB38B28A29CC300EC47B1 /* AccountCardVM.swift */; };
 		F45BB39128A2A0BF00EC47B1 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45BB39028A2A0BF00EC47B1 /* BaseViewController.swift */; };
+		F4ED42BB28A3BB01003BA3CE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4ED42BA28A3BB01003BA3CE /* Constants.swift */; };
+		F4ED42BE28A3C19A003BA3CE /* CustomBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4ED42BD28A3C199003BA3CE /* CustomBarButtonItem.swift */; };
+		F4ED42C228A3CF73003BA3CE /* TransactionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4ED42C028A3CF73003BA3CE /* TransactionsTableViewCell.swift */; };
+		F4ED42C328A3CF73003BA3CE /* TransactionsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4ED42C128A3CF73003BA3CE /* TransactionsTableViewCell.xib */; };
+		F4ED42C528A3D407003BA3CE /* TableViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4ED42C428A3D407003BA3CE /* TableViewCellModel.swift */; };
+		F4ED42CA28A3EAC2003BA3CE /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4ED42C928A3EAC2003BA3CE /* CustomImageView.swift */; };
+		F4ED42CC28A3EB7B003BA3CE /* CustomUITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4ED42CB28A3EB7B003BA3CE /* CustomUITableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +78,13 @@
 		F45BB38928A29CA900EC47B1 /* TransactionsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsVM.swift; sourceTree = "<group>"; };
 		F45BB38B28A29CC300EC47B1 /* AccountCardVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountCardVM.swift; sourceTree = "<group>"; };
 		F45BB39028A2A0BF00EC47B1 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		F4ED42BA28A3BB01003BA3CE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F4ED42BD28A3C199003BA3CE /* CustomBarButtonItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBarButtonItem.swift; sourceTree = "<group>"; };
+		F4ED42C028A3CF73003BA3CE /* TransactionsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsTableViewCell.swift; sourceTree = "<group>"; };
+		F4ED42C128A3CF73003BA3CE /* TransactionsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransactionsTableViewCell.xib; sourceTree = "<group>"; };
+		F4ED42C428A3D407003BA3CE /* TableViewCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellModel.swift; sourceTree = "<group>"; };
+		F4ED42C928A3EAC2003BA3CE /* CustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
+		F4ED42CB28A3EB7B003BA3CE /* CustomUITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUITableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,13 +135,14 @@
 		F45BB33B28A295FD00EC47B1 /* TRFinansIslemlerScreen */ = {
 			isa = PBXGroup;
 			children = (
+				F4ED42C828A3EAB0003BA3CE /* CustomUIS */,
+				F4ED42BC28A3BB42003BA3CE /* Storyboard */,
+				F4ED42B928A3BAE5003BA3CE /* VCConstants */,
 				F4CC2E0328A2ABA500FC38DE /* Extensions */,
 				F45BB38F28A2A09D00EC47B1 /* BaseViewController */,
 				F45BB36E28A296D000EC47B1 /* Screens */,
 				F45BB36D28A296C500EC47B1 /* Models */,
 				F45BB36C28A296A500EC47B1 /* Supporting Files */,
-				F45BB34228A295FD00EC47B1 /* Main.storyboard */,
-				F45BB34728A2960100EC47B1 /* LaunchScreen.storyboard */,
 				F45BB34A28A2960100EC47B1 /* Info.plist */,
 			);
 			path = TRFinansIslemlerScreen;
@@ -164,6 +179,7 @@
 		F45BB36D28A296C500EC47B1 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				F4ED42C428A3D407003BA3CE /* TableViewCellModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -184,6 +200,7 @@
 		F45BB36F28A296FB00EC47B1 /* HomeScreen */ = {
 			isa = PBXGroup;
 			children = (
+				F4ED42BF28A3CF24003BA3CE /* tableViewCell */,
 				F45BB37228A2972300EC47B1 /* HomeVC.swift */,
 				F45BB37028A2970C00EC47B1 /* HomeVM.swift */,
 			);
@@ -247,6 +264,42 @@
 			children = (
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F4ED42B928A3BAE5003BA3CE /* VCConstants */ = {
+			isa = PBXGroup;
+			children = (
+				F4ED42BA28A3BB01003BA3CE /* Constants.swift */,
+			);
+			path = VCConstants;
+			sourceTree = "<group>";
+		};
+		F4ED42BC28A3BB42003BA3CE /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				F45BB34228A295FD00EC47B1 /* Main.storyboard */,
+				F45BB34728A2960100EC47B1 /* LaunchScreen.storyboard */,
+			);
+			name = Storyboard;
+			sourceTree = "<group>";
+		};
+		F4ED42BF28A3CF24003BA3CE /* tableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				F4ED42C028A3CF73003BA3CE /* TransactionsTableViewCell.swift */,
+				F4ED42C128A3CF73003BA3CE /* TransactionsTableViewCell.xib */,
+			);
+			path = tableViewCell;
+			sourceTree = "<group>";
+		};
+		F4ED42C828A3EAB0003BA3CE /* CustomUIS */ = {
+			isa = PBXGroup;
+			children = (
+				F4ED42C928A3EAC2003BA3CE /* CustomImageView.swift */,
+				F4ED42CB28A3EB7B003BA3CE /* CustomUITableView.swift */,
+				F4ED42BD28A3C199003BA3CE /* CustomBarButtonItem.swift */,
+			);
+			path = CustomUIS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -355,6 +408,7 @@
 			files = (
 				F45BB34928A2960100EC47B1 /* LaunchScreen.storyboard in Resources */,
 				F45BB34628A2960100EC47B1 /* Assets.xcassets in Resources */,
+				F4ED42C328A3CF73003BA3CE /* TransactionsTableViewCell.xib in Resources */,
 				F45BB34428A295FD00EC47B1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -385,14 +439,20 @@
 				F45BB37C28A29C1E00EC47B1 /* TabBarVC.swift in Sources */,
 				F45BB38A28A29CA900EC47B1 /* TransactionsVM.swift in Sources */,
 				F45BB33F28A295FD00EC47B1 /* SceneDelegate.swift in Sources */,
+				F4ED42BB28A3BB01003BA3CE /* Constants.swift in Sources */,
 				F45BB39128A2A0BF00EC47B1 /* BaseViewController.swift in Sources */,
 				F45BB38828A29C9B00EC47B1 /* ApplicationsVM.swift in Sources */,
 				F45BB38C28A29CC300EC47B1 /* AccountCardVM.swift in Sources */,
+				F4ED42C528A3D407003BA3CE /* TableViewCellModel.swift in Sources */,
+				F4ED42CC28A3EB7B003BA3CE /* CustomUITableView.swift in Sources */,
 				F45BB38028A29C5300EC47B1 /* ApplicationsVC.swift in Sources */,
+				F4ED42C228A3CF73003BA3CE /* TransactionsTableViewCell.swift in Sources */,
+				F4ED42CA28A3EAC2003BA3CE /* CustomImageView.swift in Sources */,
 				F45BB38228A29C6600EC47B1 /* TransactionsVC.swift in Sources */,
 				F45BB38628A29C9000EC47B1 /* CampaignsVM.swift in Sources */,
 				F45BB37E28A29C3F00EC47B1 /* CampaignsVC.swift in Sources */,
 				F45BB38428A29C7B00EC47B1 /* AccountCardVC.swift in Sources */,
+				F4ED42BE28A3C19A003BA3CE /* CustomBarButtonItem.swift in Sources */,
 				F45BB37328A2972300EC47B1 /* HomeVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

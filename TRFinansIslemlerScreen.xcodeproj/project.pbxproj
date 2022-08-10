@@ -34,6 +34,7 @@
 		F4ED42C528A3D407003BA3CE /* TableViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4ED42C428A3D407003BA3CE /* TableViewCellModel.swift */; };
 		F4ED42CA28A3EAC2003BA3CE /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4ED42C928A3EAC2003BA3CE /* CustomImageView.swift */; };
 		F4ED42CC28A3EB7B003BA3CE /* CustomUITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4ED42CB28A3EB7B003BA3CE /* CustomUITableView.swift */; };
+		F4F5436428A4490000C43E66 /* CustomUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F5436328A4490000C43E66 /* CustomUIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +86,7 @@
 		F4ED42C428A3D407003BA3CE /* TableViewCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellModel.swift; sourceTree = "<group>"; };
 		F4ED42C928A3EAC2003BA3CE /* CustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
 		F4ED42CB28A3EB7B003BA3CE /* CustomUITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUITableView.swift; sourceTree = "<group>"; };
+		F4F5436328A4490000C43E66 /* CustomUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -298,6 +300,7 @@
 				F4ED42C928A3EAC2003BA3CE /* CustomImageView.swift */,
 				F4ED42CB28A3EB7B003BA3CE /* CustomUITableView.swift */,
 				F4ED42BD28A3C199003BA3CE /* CustomBarButtonItem.swift */,
+				F4F5436328A4490000C43E66 /* CustomUIView.swift */,
 			);
 			path = CustomUIS;
 			sourceTree = "<group>";
@@ -444,6 +447,7 @@
 				F45BB38828A29C9B00EC47B1 /* ApplicationsVM.swift in Sources */,
 				F45BB38C28A29CC300EC47B1 /* AccountCardVM.swift in Sources */,
 				F4ED42C528A3D407003BA3CE /* TableViewCellModel.swift in Sources */,
+				F4F5436428A4490000C43E66 /* CustomUIView.swift in Sources */,
 				F4ED42CC28A3EB7B003BA3CE /* CustomUITableView.swift in Sources */,
 				F45BB38028A29C5300EC47B1 /* ApplicationsVC.swift in Sources */,
 				F4ED42C228A3CF73003BA3CE /* TransactionsTableViewCell.swift in Sources */,

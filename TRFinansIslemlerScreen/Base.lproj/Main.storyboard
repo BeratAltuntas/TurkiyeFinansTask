@@ -22,7 +22,7 @@
                                 <color key="backgroundColor" name="HomeScreenBackgroundcolor"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5nG-KC-Ovd">
-                                <rect key="frame" x="24" y="88" width="366" height="62"/>
+                                <rect key="frame" x="24" y="120" width="366" height="62"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="62" id="Sje-Cz-fDE"/>
                                 </constraints>
@@ -30,8 +30,104 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L2D-ds-jiE" customClass="CustomUIView" customModule="TRFinansIslemlerScreen" customModuleProvider="target">
+                                <rect key="frame" x="16" y="666" width="382" height="114"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="backgroundImage" translatesAutoresizingMaskIntoConstraints="NO" id="w7t-RO-eWA" customClass="CustomUIImageView" customModule="TRFinansIslemlerScreen" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="114"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" name="homeScreenImageBackgroundColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="30"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="businessperson" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wkg-3J-RnH" customClass="CustomUIImageView" customModule="TRFinansIslemlerScreen" customModuleProvider="target">
+                                        <rect key="frame" x="-7" y="0.0" width="136" height="114"/>
+                                        <color key="tintColor" systemColor="labelColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="136" id="spH-kZ-yPD"/>
+                                        </constraints>
+                                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="small"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="30"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="zXP-RH-eAk">
+                                        <rect key="frame" x="136" y="24.5" width="236" height="65"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bas Biriktir! &gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GBA-z3-axX">
+                                                <rect key="frame" x="0.0" y="0.0" width="236" height="32.5"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="27"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x5v-sb-vsa">
+                                                <rect key="frame" x="0.0" y="46.5" width="236" height="18.5"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="İstediğinde ">
+                                                        <attributes>
+                                                            <font key="NSFont" size="15" name="HelveticaNeue-Medium"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=" ">
+                                                        <attributes>
+                                                            <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <color key="NSColor" red="0.16078000000000001" green="0.72941" blue="0.63922000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <font key="NSFont" size="15" name="HelveticaNeue-CondensedBlack"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="5 TL ">
+                                                        <attributes>
+                                                            <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <color key="NSColor" red="0.16078431372549018" green="0.72941176470588232" blue="0.63921568627450975" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <font key="NSFont" size="15" name="HelveticaNeue-CondensedBlack"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content=" ">
+                                                        <attributes>
+                                                            <font key="NSFont" size="15" name="HelveticaNeue-CondensedBlack"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                    <fragment content="biriktir.">
+                                                        <attributes>
+                                                            <font key="NSFont" size="15" name="HelveticaNeue-Medium"/>
+                                                            <font key="NSOriginalFont" size="14" name="HelveticaNeue-Medium"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" name="homeScreenImageBackgroundColor"/>
+                                <color key="tintColor" name="homeScreenImageBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="Wkg-3J-RnH" firstAttribute="leading" secondItem="L2D-ds-jiE" secondAttribute="leading" constant="-7" id="0ZX-o8-Aif"/>
+                                    <constraint firstItem="Wkg-3J-RnH" firstAttribute="top" secondItem="L2D-ds-jiE" secondAttribute="top" id="RZF-nO-fmJ"/>
+                                    <constraint firstItem="zXP-RH-eAk" firstAttribute="centerY" secondItem="L2D-ds-jiE" secondAttribute="centerY" id="c4H-Nl-893"/>
+                                    <constraint firstItem="zXP-RH-eAk" firstAttribute="leading" secondItem="Wkg-3J-RnH" secondAttribute="trailing" constant="7" id="cd9-23-r0r"/>
+                                    <constraint firstAttribute="trailing" secondItem="zXP-RH-eAk" secondAttribute="trailing" constant="10" id="kIl-nL-UBB"/>
+                                    <constraint firstAttribute="bottom" secondItem="Wkg-3J-RnH" secondAttribute="bottom" id="oJc-YV-nrt"/>
+                                    <constraint firstAttribute="height" constant="114" id="w66-mI-hxW"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="9oI-0P-RQg" customClass="CustomUITableView" customModule="TRFinansIslemlerScreen" customModuleProvider="target">
-                                <rect key="frame" x="16" y="150" width="382" height="340"/>
+                                <rect key="frame" x="16" y="182" width="382" height="340"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="340" id="Md1-05-vtN"/>
@@ -40,101 +136,32 @@
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <integer key="value" value="20"/>
                                     </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <integer key="value" value="44"/>
+                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <outlet property="dataSource" destination="RA5-t6-2tg" id="Q2m-l4-nnp"/>
                                     <outlet property="delegate" destination="RA5-t6-2tg" id="P24-vl-Ein"/>
                                 </connections>
                             </tableView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundImage" translatesAutoresizingMaskIntoConstraints="NO" id="9Nw-NH-veq" customClass="CustomUIImageView" customModule="TRFinansIslemlerScreen" customModuleProvider="target">
-                                <rect key="frame" x="16" y="675" width="382" height="114"/>
-                                <color key="backgroundColor" name="homeScreenImageBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="114" id="MkB-RC-dJk"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <integer key="value" value="20"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bas Biriktir!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GBA-z3-axX">
-                                <rect key="frame" x="188" y="701" width="210" height="29"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="24"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Wkg-3J-RnH">
-                                <rect key="frame" x="16" y="675" width="136" height="114"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="136" id="spH-kZ-yPD"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <integer key="value" value="40"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x5v-sb-vsa">
-                                <rect key="frame" x="188" y="736" width="150" height="18"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="İstediğinde ">
-                                        <attributes>
-                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content=" ">
-                                        <attributes>
-                                            <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <color key="NSColor" red="0.16078000000000001" green="0.72941" blue="0.63922000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="15" name="HelveticaNeue-CondensedBold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="5 TL ">
-                                        <attributes>
-                                            <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <color key="NSColor" red="0.16078431372549018" green="0.72941176470588232" blue="0.63921568627450975" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="15" name="HelveticaNeue-CondensedBold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content=" biriktir.">
-                                        <attributes>
-                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="FV0-uw-UD2"/>
                         <color key="backgroundColor" name="HomeScreenBackgroundcolor"/>
                         <constraints>
                             <constraint firstItem="Oh5-cq-0eb" firstAttribute="top" secondItem="TP1-Xn-YFm" secondAttribute="top" id="1ui-gD-B4P"/>
-                            <constraint firstItem="GBA-z3-axX" firstAttribute="leading" secondItem="Wkg-3J-RnH" secondAttribute="trailing" constant="36" id="2iH-3U-zdL"/>
-                            <constraint firstItem="FV0-uw-UD2" firstAttribute="bottom" secondItem="9Nw-NH-veq" secondAttribute="bottom" constant="24" id="62x-h5-Fim"/>
-                            <constraint firstItem="5nG-KC-Ovd" firstAttribute="top" secondItem="FV0-uw-UD2" secondAttribute="top" id="Bom-bX-K1I"/>
-                            <constraint firstItem="Wkg-3J-RnH" firstAttribute="bottom" secondItem="9Nw-NH-veq" secondAttribute="bottom" id="Dam-W7-49P"/>
-                            <constraint firstItem="9Nw-NH-veq" firstAttribute="leading" secondItem="FV0-uw-UD2" secondAttribute="leading" constant="16" id="DlH-pW-xoJ"/>
+                            <constraint firstItem="5nG-KC-Ovd" firstAttribute="top" secondItem="FV0-uw-UD2" secondAttribute="top" constant="32" id="Bom-bX-K1I"/>
                             <constraint firstItem="9oI-0P-RQg" firstAttribute="leading" secondItem="FV0-uw-UD2" secondAttribute="leading" constant="16" id="EgM-KG-yRm"/>
-                            <constraint firstItem="Wkg-3J-RnH" firstAttribute="leading" secondItem="9Nw-NH-veq" secondAttribute="leading" id="IW3-JM-5J0"/>
-                            <constraint firstItem="FV0-uw-UD2" firstAttribute="trailing" secondItem="9Nw-NH-veq" secondAttribute="trailing" constant="16" id="Iz6-Bl-eDf"/>
                             <constraint firstItem="Oh5-cq-0eb" firstAttribute="trailing" secondItem="FV0-uw-UD2" secondAttribute="trailing" id="J2h-XX-KPu"/>
                             <constraint firstItem="FV0-uw-UD2" firstAttribute="trailing" secondItem="5nG-KC-Ovd" secondAttribute="trailing" constant="24" id="JHq-dP-uUF"/>
-                            <constraint firstItem="GBA-z3-axX" firstAttribute="trailing" secondItem="9Nw-NH-veq" secondAttribute="trailing" id="NJs-NR-pNr"/>
-                            <constraint firstItem="9Nw-NH-veq" firstAttribute="top" relation="greaterThanOrEqual" secondItem="9oI-0P-RQg" secondAttribute="bottom" constant="61" id="Q6v-5m-X6O"/>
+                            <constraint firstItem="FV0-uw-UD2" firstAttribute="bottom" secondItem="L2D-ds-jiE" secondAttribute="bottom" constant="33" id="Sum-9w-KOL"/>
                             <constraint firstItem="Oh5-cq-0eb" firstAttribute="leading" secondItem="FV0-uw-UD2" secondAttribute="leading" id="Swp-TN-ZS9"/>
-                            <constraint firstItem="x5v-sb-vsa" firstAttribute="top" secondItem="GBA-z3-axX" secondAttribute="bottom" constant="6" id="U7f-vY-eEt"/>
+                            <constraint firstItem="L2D-ds-jiE" firstAttribute="top" relation="lessThanOrEqual" secondItem="9oI-0P-RQg" secondAttribute="bottom" constant="144" id="Ug2-dy-ktO"/>
                             <constraint firstItem="5nG-KC-Ovd" firstAttribute="leading" secondItem="FV0-uw-UD2" secondAttribute="leading" constant="24" id="Wrw-OP-HHy"/>
-                            <constraint firstItem="x5v-sb-vsa" firstAttribute="leading" secondItem="GBA-z3-axX" secondAttribute="leading" id="a7s-cb-5JJ"/>
-                            <constraint firstItem="GBA-z3-axX" firstAttribute="top" secondItem="9Nw-NH-veq" secondAttribute="top" constant="26" id="l4w-qv-CJ0"/>
-                            <constraint firstItem="9Nw-NH-veq" firstAttribute="baseline" relation="greaterThanOrEqual" secondItem="x5v-sb-vsa" secondAttribute="firstBaseline" constant="10.5" symbolType="layoutAnchor" id="lr1-kk-Wo9"/>
+                            <constraint firstItem="L2D-ds-jiE" firstAttribute="leading" secondItem="FV0-uw-UD2" secondAttribute="leading" constant="16" id="cQc-sd-Zuz"/>
+                            <constraint firstItem="FV0-uw-UD2" firstAttribute="trailing" secondItem="L2D-ds-jiE" secondAttribute="trailing" constant="16" id="mAc-lR-u6w"/>
                             <constraint firstItem="FV0-uw-UD2" firstAttribute="trailing" secondItem="9oI-0P-RQg" secondAttribute="trailing" constant="16" id="nRk-eb-Yjx"/>
                             <constraint firstItem="9oI-0P-RQg" firstAttribute="top" secondItem="5nG-KC-Ovd" secondAttribute="bottom" id="wRH-X5-NSP"/>
-                            <constraint firstItem="Wkg-3J-RnH" firstAttribute="top" secondItem="9Nw-NH-veq" secondAttribute="top" id="wgL-pa-KTC"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" largeTitleDisplayMode="always" id="M7S-PX-idx"/>
@@ -336,22 +363,31 @@
             <point key="canvasLocation" x="4729" y="-1213"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="Wkg-3J-RnH">
+            <size key="intrinsicContentSize" width="424" height="588"/>
+        </designable>
+    </designables>
     <resources>
         <image name="backgroundImage" width="374" height="399"/>
+        <image name="businessperson" width="424" height="588"/>
         <image name="iconHome" width="24" height="24"/>
         <image name="iconIslemler" width="24" height="24"/>
         <image name="iconKampanya" width="24" height="24"/>
         <image name="iconPlusArti" width="24" height="24"/>
         <image name="iconWallet" width="24" height="24"/>
         <namedColor name="HomeScreenBackgroundcolor">
-            <color red="0.96862745098039216" green="0.96862745098039216" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.96899998188018799" green="0.96899998188018799" blue="0.98000001907348633" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="TabbarItemBackgroundColor">
             <color red="0.60799998044967651" green="0.74099999666213989" blue="0.17299999296665192" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="homeScreenImageBackgroundColor">
-            <color red="0.80784313725490198" green="0.90588235294117647" blue="0.30196078431372547" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.80800002813339233" green="0.90600001811981201" blue="0.30199998617172241" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

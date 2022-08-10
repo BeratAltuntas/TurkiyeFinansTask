@@ -21,7 +21,9 @@ enum VCConstants {
     static let iconQR = "iconQr"
     
     static let homeScreenBackgroundImage = "backgroundImage"
+    static let homeScreenBusinessPersonImage = "businessperson"
     
     static let homeScreenImageBackgroundColor = "homeScreenImageBackgroundColor"
     static let tabbarItemBackgroundColor = "TabbarItemBackgroundColor"
+    
 }

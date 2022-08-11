@@ -96,9 +96,10 @@ extension HomeVC: UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
     }
+    
+    
 }
 
 // MARK: - extension: UITableViewDelegate
 extension HomeVC: UITableViewDelegate {
-    
 }

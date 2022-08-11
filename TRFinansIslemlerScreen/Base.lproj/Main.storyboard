@@ -43,19 +43,6 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="businessperson" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wkg-3J-RnH" customClass="CustomUIImageView" customModule="TRFinansIslemlerScreen" customModuleProvider="target">
-                                        <rect key="frame" x="-7" y="0.0" width="136" height="114"/>
-                                        <color key="tintColor" systemColor="labelColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="136" id="spH-kZ-yPD"/>
-                                        </constraints>
-                                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="small"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <integer key="value" value="30"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="zXP-RH-eAk">
                                         <rect key="frame" x="136" y="24.5" width="236" height="65"/>
                                         <subviews>
@@ -108,6 +95,20 @@
                                             </label>
                                         </subviews>
                                     </stackView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="businessperson" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wkg-3J-RnH" customClass="CustomUIImageView" customModule="TRFinansIslemlerScreen" customModuleProvider="target">
+                                        <rect key="frame" x="-8" y="0.0" width="136" height="151"/>
+                                        <color key="tintColor" systemColor="labelColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="136" id="spH-kZ-yPD"/>
+                                            <constraint firstAttribute="height" constant="151" id="uKm-BH-uAK"/>
+                                        </constraints>
+                                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="small"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="30"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" name="homeScreenImageBackgroundColor"/>
                                 <color key="tintColor" name="homeScreenImageBackgroundColor"/>
@@ -117,7 +118,6 @@
                                     <constraint firstItem="zXP-RH-eAk" firstAttribute="centerY" secondItem="L2D-ds-jiE" secondAttribute="centerY" id="c4H-Nl-893"/>
                                     <constraint firstItem="zXP-RH-eAk" firstAttribute="leading" secondItem="Wkg-3J-RnH" secondAttribute="trailing" constant="7" id="cd9-23-r0r"/>
                                     <constraint firstAttribute="trailing" secondItem="zXP-RH-eAk" secondAttribute="trailing" constant="10" id="kIl-nL-UBB"/>
-                                    <constraint firstAttribute="bottom" secondItem="Wkg-3J-RnH" secondAttribute="bottom" id="oJc-YV-nrt"/>
                                     <constraint firstAttribute="height" constant="114" id="w66-mI-hxW"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
@@ -127,10 +127,10 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="9oI-0P-RQg" customClass="CustomUITableView" customModule="TRFinansIslemlerScreen" customModuleProvider="target">
-                                <rect key="frame" x="16" y="182" width="382" height="340"/>
+                                <rect key="frame" x="16" y="182" width="382" height="374"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="340" id="Md1-05-vtN"/>
+                                    <constraint firstAttribute="height" constant="374" id="KVW-eu-ms8"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -156,9 +156,9 @@
                             <constraint firstItem="FV0-uw-UD2" firstAttribute="trailing" secondItem="5nG-KC-Ovd" secondAttribute="trailing" constant="24" id="JHq-dP-uUF"/>
                             <constraint firstItem="FV0-uw-UD2" firstAttribute="bottom" secondItem="L2D-ds-jiE" secondAttribute="bottom" constant="33" id="Sum-9w-KOL"/>
                             <constraint firstItem="Oh5-cq-0eb" firstAttribute="leading" secondItem="FV0-uw-UD2" secondAttribute="leading" id="Swp-TN-ZS9"/>
-                            <constraint firstItem="L2D-ds-jiE" firstAttribute="top" relation="lessThanOrEqual" secondItem="9oI-0P-RQg" secondAttribute="bottom" constant="144" id="Ug2-dy-ktO"/>
                             <constraint firstItem="5nG-KC-Ovd" firstAttribute="leading" secondItem="FV0-uw-UD2" secondAttribute="leading" constant="24" id="Wrw-OP-HHy"/>
                             <constraint firstItem="L2D-ds-jiE" firstAttribute="leading" secondItem="FV0-uw-UD2" secondAttribute="leading" constant="16" id="cQc-sd-Zuz"/>
+                            <constraint firstItem="L2D-ds-jiE" firstAttribute="top" relation="lessThanOrEqual" secondItem="9oI-0P-RQg" secondAttribute="bottom" constant="110" id="gQA-v0-FJn"/>
                             <constraint firstItem="FV0-uw-UD2" firstAttribute="trailing" secondItem="L2D-ds-jiE" secondAttribute="trailing" constant="16" id="mAc-lR-u6w"/>
                             <constraint firstItem="FV0-uw-UD2" firstAttribute="trailing" secondItem="9oI-0P-RQg" secondAttribute="trailing" constant="16" id="nRk-eb-Yjx"/>
                             <constraint firstItem="9oI-0P-RQg" firstAttribute="top" secondItem="5nG-KC-Ovd" secondAttribute="bottom" id="wRH-X5-NSP"/>

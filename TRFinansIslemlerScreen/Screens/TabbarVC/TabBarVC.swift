@@ -53,13 +53,6 @@ final class TabBarVC: UITabBarController {
         self.tabBar.backgroundColor = .white
         
         self.tabBar.layer.insertSublayer(layer, at: 0)
-        
-//        if let items = self.tabBar.items {
-//          items.forEach { item in item.imageInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0) }
-//        }
-//
-//        self.tabBar.itemWidth = 50
-//        self.tabBar.itemPositioning = .centered
     }
 }
 

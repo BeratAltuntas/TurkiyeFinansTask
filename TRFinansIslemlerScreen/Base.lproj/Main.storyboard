@@ -250,6 +250,9 @@
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="selectedImageTintColor" name="TabbarItemBackgroundColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isCornerRounded" value="YES"/>
+                        </userDefinedRuntimeAttributes>
                     </tabBar>
                     <connections>
                         <segue destination="ZVA-4s-Bgc" kind="relationship" relationship="viewControllers" id="qvq-oW-Uwb"/>
@@ -364,8 +367,14 @@
         </scene>
     </scenes>
     <designables>
+        <designable name="TiL-bS-caT">
+            <size key="intrinsicContentSize" width="-1" height="83"/>
+        </designable>
         <designable name="Wkg-3J-RnH">
             <size key="intrinsicContentSize" width="424" height="588"/>
+        </designable>
+        <designable name="w7t-RO-eWA">
+            <size key="intrinsicContentSize" width="374" height="399"/>
         </designable>
     </designables>
     <resources>

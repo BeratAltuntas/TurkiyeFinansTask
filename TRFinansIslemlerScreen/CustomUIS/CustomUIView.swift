@@ -17,16 +17,15 @@ class CustomUIView: UIView {
         }
     }
     
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        self.layer.shadowColor = UIColor.black.cgColor
-        self.layer.shadowOpacity = 1
-        self.layer.shadowOffset = .zero
-        self.layer.shadowRadius = 10
-
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+    @IBInspectable
+    var isShadowSet: Bool = false {
+        didSet {
+            if isShadowSet {
+                self.layer.shadowColor = UIColor.black.cgColor
+                self.layer.shadowOpacity = 0.4
+                self.layer.shadowOffset = .zero
+                self.layer.shadowRadius = 3
+            }
+        }
     }
 }

@@ -55,12 +55,20 @@ final class HomeVC: BaseViewController {
         
     }
     
+    private func ShowWorkingAlert(title: String, message: String) {
+        let ac = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        ac.addAction(UIAlertAction(title: "Cancel", style: .cancel))
+        present(ac, animated: true)
+    }
+    
     @objc private func leftBarButton_TUI() {
         // going to person page
+        ShowWorkingAlert(title: "Touched", message: "left bar button touched")
     }
     
     @objc private func rightBarButton_TUI() {
         // going to notification page
+        ShowWorkingAlert(title: "Touched", message: "right bar button touched")
     }
 }
 
@@ -89,17 +97,17 @@ extension HomeVC: UITableViewDataSource {
         checkmark.tintColor = UIColor(named: VCConstants.tabbarItemBackgroundColor)
         cell.accessoryView = checkmark
         
-        
         return cell
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-    }
     
     
 }
 
 // MARK: - extension: UITableViewDelegate
 extension HomeVC: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        // selected table view cell
+        ShowWorkingAlert(title: "Touched", message: "\(tableViewCellArray[indexPath.row].title) touched")
+    }
 }
